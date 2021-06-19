@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="0"
+            name="result"
+            class="input result"
+          />
+        </div>
+        <div class="btn-container">
+             <div class="rowOne">
+          <button class="num" id="operator" value="*" onclick="input('+')">
+            +
+          </button>
+          <button class="num" id="operator" value="*" onclick="input('-')">
+            -
+          </button>
+          <button class="num" id="operator" value="*" onclick="input('*')">
+            *
+          </button>
+          <button class="num" id="operator" value="*" onclick="input('/')">
+            /
+          </button>
+        </div>
+
+        <div class="rowTwo">
+          <button value="7" onclick="input('7')" class="num">7</button>
+          <button value="8" onclick="input('8')" class="num">8</button>
+          <button value="9" onclick="input('9')" class="num">9</button>
+          <button
+            class="num total b"
+            id="total"
+            value="="
+            onclick="totalButtonClicked()"
+          >
+            =
+          </button>
+          <!-- <button value="4" onclick="input('4')" class="num">4</button>
+          <button value="5" onclick="input('5')" class="num">5</button>
+          <button value="6" onclick="input('6')" class="num">6</button> -->
+          <!-- <button value="1" onclick="input('1')" class="num">1</button>
+          <button value="2" onclick="input('2')" class="num">2</button>
+          <button value="3" onclick="input('3')" class="num">3</button> -->
+        </div>
+
+        <div class="rowTwo">
+          <button value="4" onclick="input('4')" class="num">4</button>
+          <button value="5" onclick="input('5')" class="num">5</button>
+          <button value="6" onclick="input('6')" class="num">6</button>
+        </div>
+
+        <div class="rowTwo">
+          <button value="1" onclick="input('1')" class="num">1</button>
+          <button value="2" onclick="input('2')" class="num">2</button>
+          <button value="3" onclick="input('3')" class="num">3</button>
+        </div>
+        </div>
+       
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
